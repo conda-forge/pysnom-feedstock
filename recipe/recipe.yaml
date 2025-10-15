@@ -13,13 +13,13 @@ source:
   sha256: 0675b1b92aa11b22247f8feb2520a166f11fca072310c43ed3de2dec84057f62
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python ${{ python_min }}*
+    - python ${{ python_min }}.*
     - setuptools
     - setuptools-scm
     - pip
@@ -42,6 +42,7 @@ tests:
 
 about:
   summary: Python tools for SNOM data processing.
+  description: Scanning Near-field Optical Microscopy (SNOM) analysis tools
   license: CC-BY-NC-SA-4.0
   license_file: LICENSE
   repository: https://github.com/Quasars/pySNOM/
