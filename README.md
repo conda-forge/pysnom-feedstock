@@ -11,6 +11,8 @@ Summary: Python tools for SNOM data processing.
 
 Development: https://github.com/Quasars/pySNOM/
 
+Scanning Near-field Optical Microscopy (SNOM) analysis tools
+
 Current build status
 ====================
 
