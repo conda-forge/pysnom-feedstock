@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pysnom
-  version: 0.2.1
+  version: "0.3.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pysnom-${{ version }}.tar.gz
-  sha256: 0675b1b92aa11b22247f8feb2520a166f11fca072310c43ed3de2dec84057f62
+  sha256: b1403ef431821203b0cd1fcfb64999775264c8c2f1d730d9d5847c40bfd0d792
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
