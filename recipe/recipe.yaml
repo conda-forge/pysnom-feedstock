@@ -33,7 +33,7 @@ requirements:
     - pandas >=1.4.0
     - scikit-image
   tests:
-    - gwyfile ==0.2.0 #issue with versionning
+
 
 tests:
   - python:
@@ -41,6 +41,9 @@ tests:
         - pySNOM
       pip_check: true
       python_version: ${{ python_min }}.*
+  - requirements:
+      run:
+        - gwyfile ==0.2.0 #issue with versionning
 
 about:
   summary: Python tools for SNOM data processing.
