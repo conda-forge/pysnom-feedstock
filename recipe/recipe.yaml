@@ -34,9 +34,10 @@ requirements:
     - scikit-image
 
 tests:
-  - python:
+  - requirements:
       run:
         - gwyfile ==0.2.0 #issue with versionning
+  - python:
       imports:
         - pySNOM
       pip_check: true
