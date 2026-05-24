@@ -35,7 +35,7 @@ requirements:
 
 
 tests:
-    - python:
+   - python:
       imports:
         - pySNOM
   - requirements:
