@@ -32,7 +32,6 @@ requirements:
     - gsffile
     - pandas >=1.4.0
     - scikit-image
-  tests:
 
 
 tests:
