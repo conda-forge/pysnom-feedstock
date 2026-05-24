@@ -35,6 +35,8 @@ requirements:
 
 tests:
   - python:
+      run:
+        - gwyfile ==0.2.0 #issue with versionning
       imports:
         - pySNOM
       pip_check: true
