@@ -33,7 +33,7 @@ requirements:
     - pandas >=1.4.0
     - scikit-image
   tests:
-   -         - gwyfile ==0.2.0 #issue with versionning
+    - gwyfile ==0.2.0 #issue with versionning
 
 tests:
   - python:
