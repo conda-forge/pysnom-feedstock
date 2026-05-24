@@ -35,9 +35,11 @@ requirements:
 
 
 tests:
-#  - python:
-      #imports:
-        # - pySNOM
+  #- python:
+   #   imports:
+    #    - pySNOM
+     # pip_check: true
+      #python_version: ${{ python_min }}.*
   - requirements:
       run:
         - pip
@@ -45,7 +47,7 @@ tests:
         - gwyfile ==0.2.0 #issue with versionning
     script:
       - pip check
-      - python -m import pySNOM
+      - python import pySNOM
 
 
 about:
