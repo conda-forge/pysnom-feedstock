@@ -36,8 +36,8 @@ requirements:
 
 tests:
   - python:
-      imports:
-        - pySNOM
+      #imports:
+        # - pySNOM
   - requirements:
       run:
         - pip
@@ -45,6 +45,7 @@ tests:
         - gwyfile ==0.2.0 #issue with versionning
     script:
       - pip check
+      - python -m import pySNOM
 
 
 about:
