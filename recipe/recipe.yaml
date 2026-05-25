@@ -35,20 +35,12 @@ requirements:
 
 
 tests:
-  #- python:
-   #   imports:
-    #    - pySNOM
+  - python:
+      imports:
+        - pySNOM
      # pip_check: true
-      #python_version: ${{ python_min }}.*
-  - requirements:
-      run:
-        - pip
-        - python ${{ python_min }}.*
-        - gwyfile ==0.2.0 #issue with versionning
-    script:
-      - pip check
-      - python import pySNOM
-
+      python_version: ${{ python_min }}.
+ #issue with versionning of gwyfile
 
 about:
   summary: Python tools for SNOM data processing.
