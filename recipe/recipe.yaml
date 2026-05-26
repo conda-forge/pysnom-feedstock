@@ -38,9 +38,10 @@ tests:
   - python:
       imports:
         - pySNOM
-     # pip_check: true
+      pip_check: false
+      #issue with versionning of gwyfile
       python_version: ${{ python_min }}.*
- #issue with versionning of gwyfile
+ 
 
 about:
   summary: Python tools for SNOM data processing.
