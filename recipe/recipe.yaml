@@ -39,7 +39,7 @@ tests:
       imports:
         - pySNOM
      # pip_check: true
-      python_version: ${{ python_min }}.
+      python_version: ${{ python_min }}.*
  #issue with versionning of gwyfile
 
 about:
