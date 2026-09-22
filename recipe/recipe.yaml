@@ -40,7 +40,9 @@ tests:
         - pySNOM
       pip_check: false
       #issue with versionning of gwyfile
-      python_version: ${{ python_min }}.*
+      python_version: 
+        - ${{ python_min }}.*
+        - "*"
 
 
 about:
