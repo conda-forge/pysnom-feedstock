@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pysnom
-  version: "0.3.1"
+  version: "0.3.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pysnom-${{ version }}.tar.gz
-  sha256: 0f3366ae6041f3f86f83ebc824235374d95bb06f35f9923685ee6ba8ca6b4d95
+  sha256: 7efd6950e2edc7466303d3b6059ea941ef19df2c19ae7e97d033f70020a73539
 
 build:
   number: 0
@@ -40,8 +40,10 @@ tests:
         - pySNOM
       pip_check: false
       #issue with versionning of gwyfile
-      python_version: ${{ python_min }}.*
- 
+      python_version: 
+        - ${{ python_min }}.*
+        - "*"
+
 
 about:
   summary: Python tools for SNOM data processing.
